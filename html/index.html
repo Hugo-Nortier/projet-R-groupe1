@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Consommation d’alcool et résultats scolaires</title>
+    <link href="css/chartist.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+</head>
+
+<body>
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin6">
+                </div>
+                <p class="mx-5 my-2 h1 text-decoration-underline text-white">Consommation d’alcool et résultats
+                    scolaires</p>
+            </nav>
+        </header>
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#desc-sujet"
+                                aria-expanded="false">
+                                <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                                <span class="hide-menu">Sujet et Finalité</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#desc-donees"
+                                aria-expanded="false">
+                                <i class="fas fa-file-csv" aria-hidden="true"></i>
+                                <span class="hide-menu">Descriptif des données</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#methodo"
+                                aria-expanded="false">
+                                <i class="fas fa-list-ol" aria-hidden="true"></i>
+                                <span class="hide-menu">Méthodologie suivie</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#instruction-parent"
+                                aria-expanded="false">
+                                <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                <span class="hide-menu">Alcool et niveau d'instruction <br />des parents</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#reussite"
+                                aria-expanded="false">
+                                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                <span class="hide-menu">Alcool et réussite scolaire</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#genre"
+                                aria-expanded="false">
+                                <i class="fas fa-venus-mars" aria-hidden="true"></i>
+                                <span class="hide-menu">Abus d'alcool et genre</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#pres-groupe"
+                                aria-expanded="false">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                                <span class="hide-menu">Présentation groupe</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                <!-- DESCRIPTIF SUJET ET FINALITE -->
+                <div id="desc-sujet" class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Descriptif du sujet et finalité du projet</h3>
+                            <div class="d-md-flex">
+                                <p class="h5 text-justify">La consommation d’alcool chez les jeunes étudiants
+                                    est
+                                    souvent
+                                    sujet de
+                                    débat.<br />
+                                    Une étude a été menée auprès d’étudiants de deux lycées Portugais au moyen de
+                                    rapports
+                                    et de
+                                    questionnaires scolaires.
+                                    Elle vise à vérifier s’il y a un lien entre consommation d’alcool et taux de
+                                    réussite à
+                                    l'école.
+                                    Les caractéristiques des données recueillies comprennent les notes des élèves
+                                    (mathématiques et
+                                    langue portugaise), les caractéristiques démographiques, sociales et
+                                    scolaires.<br />
+                                    La finalité du projet est d'étudier le degré d'alcoolisme chez ces étudiants portugais selon
+                                    qu'ils aient
+                                    ou non des parents au niveau d'instruction modeste, d'étudier leur réussite scolaire
+                                    en
+                                    fonction de
+                                    l'alcool qu'ils consomment et enfin savoir s'il y a une prédominance d'abus d'alcool
+                                    chez les étudiants
+                                    masculins.
+                                    <br/>Ce projet a été réalisé à l'aide du langage de programmation 'R' en mettant en place des tests d'hypothèses et en calculant diverses quantités statistiques.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DESCRIPTIF DONNEES -->
+                <div id="desc-donees" class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Descriptif des données</h3>
+                            <p class="h5 text-justify">Les données sont issues de 2 fichiers CSV. L'un comprenant des
+                                données d'étudiants ayant été évalués sur des cours de portugais et l'autre comprenant
+                                des données d'étudiants ayant été évalués sur des cours de mathématiques. Ces étudiants
+                                ont tous entre 15 et 22 ans.
+                                <br />
+                                Le premier fichier (portugais) comprend 649 étudiants, avec 59% de filles soit 383 et
+                                41% de garçons soit 266. <br />
+                                Le second fichier (math) comprend 395 étudiants, avec 53% de filles soit 208 et 47% de
+                                garçons soit 187.
+                            </p>
+                            <p class="h5 text-justify">De nombreuses données ont été recoltées et stockées dans ces
+                                fichiers CSV, néanmoins, on notera que les données suivantes ont été essentielles:
+                            </p>
+                            <ul>
+                                <li>'sex' : le sexe de l'étudiant;</li>
+                                <li>'Medu' : le niveau d'instruction de la mère de l'étudiant;</li>
+                                <li>'Fedu' : le niveau d'instruction du père de l'étudiant;</li>
+                                <li>'Dalc' : le degré de consommation d'alcool de l'étudiant dans la semaine;</li>
+                                <li>'Walc' : le degré de consommation d'alcool de l'étudiant dans le week-end;</li>
+                                <li>'G1' : la note sur 20 obtenue à l'examen de la première période;</li>
+                                <li>'G2' : la note sur 20 obtenue à l'examen de la deuxième période;</li>
+                                <li>'G3' : la note sur 20 obtenue à l'examen final.</li>
+                            </ul>
+                            <p class="h5 text-justify">Les données des deux fichiers ont été rassemblées et notre
+                                échantillon était constitué des étudiants
+                                âgé d'au moins 18 ans car seul cet échantillon est en âge <u>légal</u> d'acheter et de
+                                consommer de l'alcool.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- DESCRIPTIF DONNEES -->
+                <div id="methodo" class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Méthodologie suivie pour répondre aux questions</h3>
+                            <p class="h5 text-justify">La méthodo </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alcool et niveau d'instruction des parents -->
+                <div id="instruction-parent" class="row">
+                    <div class="col-lg-6">
+                        <div class="white-box-wb">
+                            <h3 class="mb-3 box-title">Consommation d’alcool pour les étudiants dont les parents ont un
+                                niveau d’instruction modeste</h3>
+                            <img src="/diagrammes/alcool-parent-modeste.PNG" width="100%"
+                                alt="Consommation d’alcool pour les étudiants dont les parents ont un niveau d’instruction modeste">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="white-box-wb">
+                            <h3 class="mb-3 box-title">Consommation d’alcool pour les étudiants dont les parents ont un
+                                niveau d’instruction non modeste</h3>
+                            <img src="/diagrammes/alcool-parent-non-modeste.PNG" width="100%"
+                                alt="Consommation d’alcool pour les étudiants dont les parents ont un niveau d’instruction non modeste">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <p>Explication:</p>
+                            <p>En abscisse, nous retrouvons la consommation d'alcool en semaine. "1" étant très peu de
+                                consommation et "5" étant beaucoup de consommation d'alcool.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alcool et réussite scolaire -->
+                <div id="reussite" class="row">
+                    <div class="col-lg-6">
+                        <div class="white-box-wb">
+                            <h3 class="mb-3 box-title">Consommation d'alcool pour les étudiants qui réussissent les
+                                examens</h3>
+                            <img src="/diagrammes/degre-alcoolisme-semaine-reussite.PNG" width="100%"
+                                alt="Consommation d'alcool pour les étudiants qui réussissent les exams">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="white-box-wb">
+                            <h3 class="mb-3 box-title">Consommation d'alcool pour les étudiants qui ne réussissent pas
+                                les examens</h3>
+                            <img src="/diagrammes/degre-alcoolisme-semaine-echec.PNG" width="100%"
+                                alt="Consommation d'alcool pour les étudiants qui ratent les exams">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <p>Explication:</p>
+                            <p>En abscisse, nous retrouvons la consommation d'alcool en semaine. "1" étant très peu de
+                                consommation et "5" étant beaucoup de consommation d'alcool.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alcool et sexe -->
+                <div id="genre" class="row">
+                    <div class="col-lg-6">
+                        <div class="white-box-wb">
+                            <h3 class="mb-3 box-title">Consommation d'alcool pour les étudiants masculins</h3>
+                            <img src="/diagrammes/degre-alcoolisme-semaine-homme.PNG" width="100%"
+                                alt="Consommation d'alcool pour les étudiants masculins">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="white-box-wb">
+                            <h3 class="mb-3 box-title">Consommation d'alcool pour les étudiantes féminines</h3>
+                            <img src="/diagrammes/degre-alcoolisme-semaine-femme.PNG" width="100%"
+                                alt="Consommation d'alcool pour les étudiantes féminines">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <p>Explication:</p>
+                            <p>En abscisse, nous retrouvons la consommation d'alcool en semaine. "1" étant très peu de
+                                consommation et "5" étant beaucoup de consommation d'alcool.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- EQUIPE -->
+                <div id="pres-groupe" class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Présentation de notre groupe</h3>
+                            <p class="h5 text-justify">Notre groupe est composé de 3 membres:
+                            </p>
+                            <ul>
+                                <li>Saad-El-Din AHMED</li>
+                                <li>Yessine BEN EL BEY</li>
+                                <li>Hugo NORTIER</li>
+                            </ul>
+                            <p>Nous avons tous les trois fait un DUT informatique à Nice puis une Licence 3 à la Miage
+                                et nous faisons maintenant un Master 1, toujours à la Miage de Sophia-Antipolis.
+                            </p>
+                            <p>
+                                Dans le groupe, nous avons tous rassemblés notre savoir-faire pour réaliser ce projet. Saad a mis en oeuvre des tests statistiques,
+                                Yessine a mis en place des hypothèses sur les informations collectées et Hugo a établit le rapport sur les cas d'études. 
+                                Evidemment, nous avons discuté tous ensemble au sujet des résultats obtenus
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer text-center"> 01-2022 | Hugo NORTIER, Yessine BEN EL BEY, Saad-El-Din AHMED
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
