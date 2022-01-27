@@ -1,5 +1,5 @@
-d1=read.table("c:/Users/dofla/Desktop/student-mat.csv",sep=",",header=TRUE)
-d2=read.table("c:/Users/dofla/Desktop/student-por.csv",sep=",",header=TRUE)
+d1=read.table("student-mat.csv",sep=",",header=TRUE)
+d2=read.table("student-por.csv",sep=",",header=TRUE)
 
 d3=merge(d1,d2,by=c("Dalc","Walc","school","sex","age","address","famsize","Pstatus","Medu","Fedu","Mjob","Fjob","reason","nursery","internet"))
 print(nrow(d3)) # 370 students
@@ -24,10 +24,20 @@ mean(subset(d3,(Fedu+Medu)/2<=1)$Dalc)
 # 1.384615 moyenne modestes
 
 var(subset(d3,(Fedu+Medu)/2>1)$Dalc)
-# 1.099111 non modestes
+# 1.099111 variance non modestes
 
 mean(subset(d3,(Fedu+Medu)/2>1)$Dalc)
 # 1.649351 moyenne non modestes
+
+# calcul de l'interval de confiance parents non modestes
+
+sd = sqrt(var(subset(d3,(Fedu+Medu)/2>1)$Dalc))
+mn = mean(subset(d3,(Fedu+Medu)/2>1)$Dalc)
+w1 = subset(d3,(Fedu+Medu)/2>1)$Dalc
+error = qt(0.975,df=length(w1)-1)*sd(w1)/sqrt(length(w1))
+left <- mean(w1)-error
+right <- mean(w1)+error
+# interval de confiance entre [1.411396,1.887305]
 
 modeste<-subset(d3,(Fedu+Medu)/2 <=1)$Dalc
 
@@ -79,6 +89,16 @@ var(subset(d3,G3.x>=10)$Dalc)
 mean(subset(d3,G3.x>=10)$Dalc)
 # 1.553191 moyenne reussite
 
+# calcul de l'interval de confiance etudiants en echec
+
+sd = sqrt(var(subset(d3,G3.x<10)$Dalc))
+mn = mean(subset(d3,G3.x<10)$Dalc)
+w1 = subset(d3,G3.x<10)$Dalc
+error = qt(0.975,df=length(w1)-1)*sd(w1)/sqrt(length(w1))
+left <- mean(w1)-error
+right <- mean(w1)+error
+# interval de confiance entre [1.368716,1.980121]
+
 echec<-subset(d3,G3.x<10)$Dalc
 
 consommation <- rep(1:max(echec))
@@ -126,6 +146,16 @@ var(subset(d3,sex=="M")$Dalc)
 # 1.381818 variance hommes
 mean(subset(d3,sex=="M")$Dalc)
 # 1.933333 moyenne hommes
+
+# calcul de l'interval de confiance etudiants hommes
+
+sd = sqrt(var(subset(d3,sex=="M")$Dalc))
+mn = mean(subset(d3,sex=="M")$Dalc)
+w1 = subset(d3,sex=="M")$Dalc
+error = qt(0.975,df=length(w1)-1)*sd(w1)/sqrt(length(w1))
+left <- mean(w1)-error
+right <- mean(w1)+error
+# interval de confiance entre [1.580172,2.286495]
 
 femmes<-subset(d3,sex=="F")$Dalc
 
