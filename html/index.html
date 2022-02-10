@@ -92,7 +92,7 @@
                                     est
                                     souvent
                                     sujet de
-                                    débat.<br /><br/>
+                                    débat.<br /><br />
                                     Une étude a été menée auprès d’étudiants de deux lycées Portugais au moyen de
                                     rapports
                                     et de
@@ -103,8 +103,9 @@
                                     Les caractéristiques des données recueillies comprennent les notes des élèves
                                     (mathématiques et
                                     langue portugaise), les caractéristiques démographiques, sociales et
-                                    scolaires.<br /><br/>
-                                    La finalité du projet est d'étudier le degré d'alcoolisme chez ces étudiants portugais selon
+                                    scolaires.<br /><br />
+                                    La finalité du projet est d'étudier le degré d'alcoolisme chez ces étudiants
+                                    portugais selon
                                     qu'ils aient
                                     ou non des parents au niveau d'instruction modeste, d'étudier leur réussite scolaire
                                     en
@@ -112,7 +113,8 @@
                                     l'alcool qu'ils consomment et enfin savoir s'il y a une prédominance d'abus d'alcool
                                     chez les étudiants
                                     masculins.
-                                    <br/>Ce projet a été réalisé à l'aide du langage de programmation 'R' en mettant en place des tests d'hypothèses et en calculant diverses quantités statistiques.
+                                    <br />Ce projet a été réalisé à l'aide du langage de programmation 'R' en mettant en
+                                    place des tests d'hypothèses et en calculant diverses quantités statistiques.
                                 </p>
                             </div>
                         </div>
@@ -127,7 +129,8 @@
                                 données d'étudiants ayant été évalués sur des cours de portugais et l'autre comprenant
                                 des données d'étudiants ayant été évalués sur des cours de mathématiques. Ces étudiants
                                 ont tous entre 15 et 22 ans.
-                                <br />
+                            </p>
+                            <p class="h5 text-justify">
                                 Le premier fichier (portugais) comprend 649 étudiants, avec 59% de filles soit 383 et
                                 41% de garçons soit 266. <br />
                                 Le second fichier (math) comprend 395 étudiants, avec 53% de filles soit 208 et 47% de
@@ -146,8 +149,10 @@
                                 <li>'G2' : la note sur 20 obtenue à l'examen de la deuxième période;</li>
                                 <li>'G3' : la note sur 20 obtenue à l'examen final.</li>
                             </ul>
-                            <p class="h5 text-justify">Les données des deux fichiers ont été rassemblées et notre
-                                échantillon était constitué des étudiants
+                            <p class="h5 text-justify">Les données des deux fichiers ont été fusionné tel que nous
+                                obtenions 370 étudiants qui étaient ET en cours de langue portugaise, ET en cours de
+                                Mathématiques.
+                                Nous en avons extrait un échantillon constitué des étudiants
                                 âgés d'au moins 18 ans car seul cet échantillon est en âge <u>légal</u> d'acheter et de
                                 consommer de l'alcool. Cet échantillon constitue 90 étudiants.
                             </p>
@@ -159,9 +164,15 @@
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="white-box">
                             <h3 class="box-title">Méthodologie suivie pour répondre aux questions</h3>
-                            <p class="h5 text-justify">Tout d'abord, nous avons déterminé notre échantillon puis nous définissions une hypothèse. 
-                                Nous envisagions diverses façons d'y répondre, au moyen de calculs de quantités statistiques (moyenne, variance). Puis, une fois que cela était bien clair et précis dans le groupe,
-                            nous avons mis en place le test d'hypothèse dans R Studio. Nous avons réalisé des diagrammes (histogrammes, diagrammes circulaires) afin de visualiser les résultats, de les comparer (par exemple comparer le niveau de consommation d'alcool chez les filles versus chez les garçons) et ainsi de pouvoir réfuter ou approuver l'hypothèse. </p>
+                            <p class="h5 text-justify">Tout d'abord, nous avons déterminé notre échantillon puis nous
+                                définissions une hypothèse 'h1' et son hypothèse opposée 'h2'.<br />
+                                Nous avons mis en place le test d'hypothèse dans R Studio et nous avons réalisés des
+                                calculs de quantités statistiques (moyenne, variance).<br />
+                                Nous avons réalisé des histogrammes afin de visualiser les résultats, de les comparer
+                                (par exemple comparer le degré de consommation d'alcool chez les étudiants qui
+                                réussissent et ceux qui échouent leur examen final).<br />
+                                Puis, nous avons calculé l'intervalle de confiance afin de savoir si la moyenne s'y
+                                trouvait et pouvoir réfuter ou accepter l'hypothèse à 95%.</p>
                         </div>
                     </div>
                 </div>
@@ -171,7 +182,7 @@
                         <div class="white-box-wb">
                             <h3 class="mb-3 box-title">Consommation d’alcool pour les étudiants dont les parents ont un
                                 niveau d’instruction modeste</h3>
-                            <img src="./diagrammes/alcool-parent-modeste.PNG" width="100%"
+                            <img src="./diagrammes/alcool-parent-modeste.PNG" style="width:100%;"
                                 alt="Consommation d’alcool pour les étudiants dont les parents ont un niveau d’instruction modeste">
                         </div>
                     </div>
@@ -179,55 +190,97 @@
                         <div class="white-box-wb">
                             <h3 class="mb-3 box-title">Consommation d’alcool pour les étudiants dont les parents ont un
                                 niveau d’instruction non modeste</h3>
-                            <img src="./diagrammes/alcool-parent-non-modeste.PNG" width="100%"
+                            <img src="./diagrammes/alcool-parent-non-modeste.PNG" style="width:100%;"
                                 alt="Consommation d’alcool pour les étudiants dont les parents ont un niveau d’instruction non modeste">
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="white-box">
-                            <p class="h5"><span class="text-decoration-underline text-info">Hypothèse n°1: </span><span> la consommation d’alcool moyenne est plus élevée chez les étudiants dont les parents ont un niveau d’instruction modeste</span>
-                                <span class="text-decoration-underline text-info"><br>Hypothèse n°2 :</span> la consommation d’alcool moyenne est plus élevée chez les
-                                 étudiants dont les parents n'ont pas un niveau d’instruction modeste</p>
-                            <p>En abscisse, nous retrouvons la consommation d'alcool en semaine. "1" étant très peu de
-                                consommation et "5" étant beaucoup de consommation d'alcool.</p>
-                                <p> Nous avons calculé la moyenne de la consommation d'alcool chez les personnes ayant des parents modestes et non modestes.</p>
-                                <br>
-                                <p>Nous allons définir M1 = Moyenne du degré d'alcoolisme des personnes ayant des parents non modestes <br>
-                                et M2 = Moyenne du degré d'alcoolisme des personnes ayant des parents modestes
-                                <br>
-                                <br>
-                                Après le calcul nous avons trouvé que M1 = 1.384615 et M2 = 1.649351.
-                                <br>
-                                Nous voyons que la moyenne de consommation d'alcool des personnes ayant des parents non modestes est moins élevée mais ce n'est pas
-                                suffisant pour confirmer notre hypothèse.
-                                <br>
-                                <br>
-                                Nous avons remarqué qu'il y a énormément de personnes qui boivent de l'alcool avec un faible degré ce qui fait que les deux moyennes
-                                tendent vers 1.
-                                <br>
-                                Nous avons vu qu'il y a énormément de personnes ayant une consommation d'alcool avec un degré de 1 (très faible) alors nous avons
-                                décidé de calculer le pourcentage de personnes qui ont un degré de consommation supérieur ou égal à 2 pour l'hypothèse 1 puis pour l'hypothèse 2.
-                                <br>
-                                <br>
-                                Nos résultats sont : <ul><li>0.2307692 soit 23% de personnes ayant des parents modestes qui ont un degré supérieur ou égal à 2.
-                                </li><li>0.3766234 soit 38% de personnes ayant des parents non modestes qui ont un degré supérieur ou égal à 2.
-                                </li></ul>
-                                <br>
-                                <br>
-                                Nous remarquons que pour l'échantillon qui constitue l'hypothèse 2, les étudiants avec un degré d'alcoolisme égal ou supérieur à 2 consituent
-                                une plus grosse part que celle de l'hypothèse 1.
-                                <br>
-                                Nous pouvons voir ça visuellement à l'aide du graphe où les étudiants ayant des parents modestes n'ont pas un taux d'alcoolémie supérieur à 3.
-                                <br>
-                                <br>
-                                Pour confirmer notre hypothèse, on décide de calculer l'intervalle de confiance de l'hypothèse 2, qui semble vraie.
-                                <br>
-                                En calculant, nous avons un intervalle entre 1.411396 et 1.887305. 
-                                <br>
-                                Nous rappelons que M2 = 1.649351 et il doit appartenir à l'intervalle [1.411396 ; 1.887305] qui est nommé intervalle de confiance à 95%.<br>
-                                En conclusion, l'hypothèse 2 est acceptée à 95%.
+                            <p class="h5"><span class="text-decoration-underline text-info">Hypothèse n°1: </span><span>
+                                    la consommation d’alcool moyenne est plus élevée chez les étudiants dont les parents
+                                    ont un niveau d’instruction modeste</span>
+                                <span class="text-decoration-underline text-info"><br />Hypothèse n°2 :</span> la
+                                consommation d’alcool moyenne est plus élevée chez les
+                                étudiants dont les parents n'ont pas un niveau d’instruction modeste
                             </p>
+                            <p class="text-justify">En abscisse, nous retrouvons la consommation d'alcool en semaine.
+                                "1" étant très peu de
+                                consommation et "5" étant très forte consommation d'alcool.</p>
+                            <p class="text-justify"> Nous avons calculé la moyenne de la consommation d'alcool chez les
+                                personnes ayant des
+                                parents modestes et non modestes.</p>
+                            <p class="text-justify">Nous allons définir M<sub>1</sub> = Moyenne du degré d'alcoolisme
+                                des personnes ayant des
+                                parents non modestes <br />
+                                et M<sub>2</sub> = Moyenne du degré d'alcoolisme des personnes ayant des parents
+                                modestes
+                            </p>
+                            <p class="text-justify">
+                                Après le calcul nous avons trouvé que M<sub>1</sub> = 1.384615 et M<sub>2</sub> =
+                                1.649351.
+                                <br /><br />
+                                Nous voyons que la moyenne de consommation d'alcool des personnes ayant des parents non
+                                modestes est moins élevée mais ce n'est pas
+                                suffisant pour confirmer notre hypothèse.
+                                <br />
+                            </p>
+                            <p class="text-justify">
+                                Les calculs de la variance de l'hypothèse 1 (V<sub>1</sub>) et de l'hypothèse 2
+                                (V<sub>2</sub>) ont donné:<br />
+                                V<sub>1</sub> = 0.5897436 et V<sub>2</sub> = 1.099111.<br />
+                                On en déduit que les données de l'hypothèse 1 sont peu dispersées, proche de la moyenne. En effet, 
+                                aucun étudiant ayant des parents au niveau d'instruction modeste ne consomme beaucoup d'alcool (ni n'en abuse). 
+                                Il n'y a pas d'étudiants tel que leur degré d'alcool est >3. <br/>
+                                Quant aux données de l'hypothèse 2, elles sont beaucoup plus dispersées que celles de l'hypothèse 1 du fait que l'on 
+                                retrouve des étudiants ayant une valeur extrême de degré d'alcoolisme (égale à 5).
+                            </p>
+                            <p class="text-justify">
 
+                                Nous avons remarqué qu'il y a énormément de personnes qui boivent de l'alcool avec un
+                                faible degré ce qui fait que les deux moyennes
+                                tendent vers 1.
+                                <br />
+                                Nous avons vu qu'il y a énormément de personnes ayant une consommation d'alcool avec un
+                                degré de 1 (très faible) alors nous avons
+                                décidé de calculer le pourcentage de personnes qui ont un degré de consommation
+                                supérieur ou égal à 2 pour l'hypothèse 1 puis pour l'hypothèse 2.
+                            </p>
+                            <p class="text-justify">Nos résultats sont :</p>
+                            <ul>
+                                <li>0.2307692 soit 23% de personnes ayant des parents modestes qui ont un degré
+                                    supérieur ou égal à 2.
+                                </li>
+                                <li>0.3766234 soit 38% de personnes ayant des parents non modestes qui ont un degré
+                                    supérieur ou égal à 2.
+                                </li>
+                            </ul>
+                            <p class="text-justify">
+                                Nous remarquons que pour l'échantillon qui constitue l'hypothèse 2, les étudiants avec
+                                un
+                                degré d'alcoolisme égal ou supérieur à 2 consituent
+                                une plus grosse part que celle de l'hypothèse 1.
+                                <br />
+                                Nous pouvons voir cela visuellement à l'aide du graphe où les étudiants ayant des
+                                parents
+                                modestes n'ont pas un taux d'alcoolémie supérieur à 3.
+                            </p>
+                            <p class="text-justify">
+                                Pour confirmer notre hypothèse, on décide de calculer l'intervalle de confiance de
+                                l'hypothèse 2, qui semble vraie.
+                                <br />
+                                En calculant, nous avons un intervalle entre 1.411396 et 1.887305.
+                                <br />
+                                Nous rappelons que M<sub>2</sub> = 1.649351 et il doit appartenir à l'intervalle
+                                [1.411396 ;
+                                1.887305] qui est nommé intervalle de confiance à 95%.
+                            </p>
+                            <p class="text-justify">
+                                <u>En conclusion, l'hypothèse 2 est acceptée à 95%.</u><br /><br />
+                                Nous supposons que les étudiants ayant des parents au niveau d'instruction non modeste
+                                consomment plus d'alcool car, vivant dans un milieu moins précaire, ils ont la
+                                possibilité
+                                d'acheter de l'alcool plus aisément.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -237,7 +290,7 @@
                         <div class="white-box-wb">
                             <h3 class="mb-3 box-title">Consommation d'alcool pour les étudiants qui réussissent les
                                 examens</h3>
-                            <img src="./diagrammes/degre-alcoolisme-semaine-reussite.PNG" width="100%"
+                            <img src="./diagrammes/degre-alcoolisme-semaine-reussite.PNG" style="width:100%;"
                                 alt="Consommation d'alcool pour les étudiants qui réussissent les exams">
                         </div>
                     </div>
@@ -245,51 +298,86 @@
                         <div class="white-box-wb">
                             <h3 class="mb-3 box-title">Consommation d'alcool pour les étudiants qui ne réussissent pas
                                 les examens</h3>
-                            <img src="./diagrammes/degre-alcoolisme-semaine-echec.PNG" width="100%"
+                            <img src="./diagrammes/degre-alcoolisme-semaine-echec.PNG" style="width:100%;"
                                 alt="Consommation d'alcool pour les étudiants qui ratent les exams">
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="white-box">
-                            <p class="h5"><span class="text-decoration-underline text-info">Hypothèse n°1: </span><span>les étudiants qui réussissent leur examen sont plus nombreux à abuser de la consommation d'alcool</span>
-                                <span class="text-decoration-underline text-info"><br>Hypothèse n°2 :</span> <span>les étudiants qui ne réussissent pas leur examen sont plus nombreux à abuser de la consommation d'alcool </span>
-                           </p>
-                         
-                            <p>En abscisse, nous retrouvons la consommation d'alcool en semaine. "1" étant très peu de
-                                consommation et "5" étant beaucoup de consommation d'alcool.</p>
-                                <p> Nous avons calculé la moyenne de la consommation d'alcool chez les étudiants par rapport à leur niveau de réussite : 
-                                    une note dans le champ G3 &GreaterEqual;10 signifie que l'étudiant a réussi son année.<br>
-                                    Si la note du champ G3 &#x3C;10 alors l'étudiant a échoué son année.
-                                </p>
-                                <br>
-                                <p>Nous allons définir M1 = Moyenne du degré d'alcoolisme des personnes ayant réussi leur année <br>
-                                et M2 = Moyenne du degré d'alcoolisme des personnes ayant échoué leur année
-                                <br>
-                                <br>
-                                Après le calcul nous avons trouvé que M1 = 1.553191 et M2 = 1.674419.
-                                <br>
-                                Nous voyons que la moyenne des personnes ayant réussi leur année est moins élevée que la moyenne des personnes en échec mais ce n'est pas
+                            <p class="h5"><span class="text-decoration-underline text-info">Hypothèse n°1:
+                                </span><span>les étudiants qui réussissent leur examen sont plus nombreux à abuser de la
+                                    consommation d'alcool</span>
+                                <span class="text-decoration-underline text-info"><br />Hypothèse n°2 :</span> <span>les
+                                    étudiants qui ne réussissent pas leur examen sont plus nombreux à abuser de la
+                                    consommation d'alcool </span>
+                            </p>
+                            <p class="text-justify">En abscisse, nous retrouvons la consommation d'alcool en semaine.
+                                "1" étant très peu de
+                                consommation et "5" étant très forte consommation d'alcool.</p>
+                            <p class="text-justify"> Nous avons calculé la moyenne de la consommation d'alcool chez les
+                                étudiants par rapport
+                                à leur niveau de réussite :
+                                une note dans le champ G3 &GreaterEqual;10 signifie que l'étudiant a réussi son
+                                année.<br />
+                                Si la note du champ G3 &#x3C;10 alors l'étudiant a échoué son année.
+                            </p>
+                            <p class="text-justify">Nous allons définir M<sub>1</sub> = Moyenne du degré d'alcoolisme
+                                des personnes ayant
+                                réussi leur année <br />
+                                et M<sub>2</sub> = Moyenne du degré d'alcoolisme des personnes ayant échoué leur année
+                            </p>
+                            <p class="text-justify">
+                                Après le calcul nous avons trouvé que M<sub>1</sub> = 1.553191 et M<sub>2</sub> =
+                                1.674419.
+                                <br /><br />
+                                Nous voyons que la moyenne des personnes ayant réussi leur année est moins élevée que la
+                                moyenne des personnes en échec mais ce n'est pas
                                 suffisant pour confirmer notre hypothèse.
-                                <br>
-                                <br>
-                                Comme précédemment nous avons décidé de calculer le pourcentage de personnes qui ont un degré de consommation supérieur ou égal à 2 pour l'hypothèse 1 puis pour l'hypothèse 2.
-                                <br>
-                                <br>
-                                Nos résultats sont : <ul><li>0.2978723 soit 30% de personnes en réussite qui ont un degré supérieur ou égal à 2.
-                                </li><li>0.4186047 soit 42% de personnes en échec qui ont un degré supérieur ou égal à 2.
-                                </li></ul>
-                                <br>
-                                Nous remarquons que pour l'échantillon qui constitue l'hypothèse 2, les étudiants avec un degré d'alcoolisme égal ou supérieur à 2 constituent
+                                <br />
+                            </p>
+                            <p class="text-justify">
+                                Les calculs de la variance de l'hypothèse 1 (V<sub>1</sub>) et de l'hypothèse 2
+                                (V<sub>2</sub>) ont donné:<br />
+                                V<sub>1</sub> = 1.078631 et V<sub>2</sub> = 0.986711.<br />
+                                On en déduit que les données des deux hypothèses sont dispersées quasiment de la même manière comme 
+                                visualisable dans les histogrammes correspondant aux deux hypothèses. 
+                            </p>
+                            <p class="text-justify">
+                                Comme précédemment nous avons décidé de calculer le pourcentage de personnes qui ont un
+                                degré de consommation supérieur ou égal à 2 pour l'hypothèse 1 puis pour l'hypothèse 2.
+                                <br />
+                            </p>
+                            <p class="text-justify">
+                                Nos résultats sont :</p>
+                            <ul>
+                                <li>0.2978723 soit 30% de personnes en réussite qui ont un degré supérieur ou égal à 2.
+                                </li>
+                                <li>0.4186047 soit 42% de personnes en échec qui ont un degré supérieur ou égal à 2.
+                                </li>
+                            </ul>
+                            <p class="text-justify">Nous remarquons que pour l'échantillon qui constitue l'hypothèse 2,
+                                les étudiants avec un
+                                degré d'alcoolisme égal ou supérieur à 2 constituent
                                 une plus grosse part que celle de l'hypothèse 1.
-                             
-                                <br>
-                                <br>
-                                Pour confirmer notre hypothèse, on décide de calculer l'intervalle de confiance de l'hypothèse 2, qui semble vraie.
-                                <br>
-                                En calculant, nous avons un intervalle entre 1.368716 et 1.980121. 
-                                <br>
-                                Nous rappelons que M2 = 1.674419 et il doit appartenir à l'intervalle [1.368716 ; 1.980121] qui est nommé intervalle de confiance à 95%.<br>
-                                En conclusion, l'hypothèse 2 est acceptée à 95%.
+                                <br />
+                                Pour confirmer notre hypothèse, on décide de calculer l'intervalle de confiance de
+                                l'hypothèse 2, qui semble vraie.
+                                <br />
+                                En calculant, nous avons un intervalle entre 1.368716 et 1.980121.
+                                <br />
+                                Nous rappelons que M<sub>2</sub> = 1.674419 et il doit appartenir à l'intervalle
+                                [1.368716 ;
+                                1.980121] qui est nommé intervalle de confiance à 95%.
+                            </p>
+                            <p class="text-justify">
+                                <u>En conclusion, l'hypothèse 2 est acceptée à 95%.</u><br /><br />
+                                Nous supposons que les étudiants qui consomment de l'alcool réussissent moins leur
+                                examen
+                                que ceux qui n'en consomment pas voire peu car l'alcool entraînerait un déficit de la
+                                capacité des étudiants à apprendre,
+                                diminuerait leur capacité à conserver des éléments d'information, à raisonner et à
+                                réfléchir
+                                convenablement.
                             </p>
                         </div>
                     </div>
@@ -299,60 +387,97 @@
                     <div class="col-lg-6">
                         <div class="white-box-wb">
                             <h3 class="mb-3 box-title">Consommation d'alcool pour les étudiants masculins</h3>
-                            <img src="./diagrammes/degre-alcoolisme-semaine-homme.PNG" width="100%"
+                            <img src="./diagrammes/degre-alcoolisme-semaine-homme.PNG" style="width:100%;"
                                 alt="Consommation d'alcool pour les étudiants masculins">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="white-box-wb">
                             <h3 class="mb-3 box-title">Consommation d'alcool pour les étudiantes féminines</h3>
-                            <img src="./diagrammes/degre-alcoolisme-semaine-femme.PNG" width="100%"
+                            <img src="./diagrammes/degre-alcoolisme-semaine-femme.PNG" style="width:100%;"
                                 alt="Consommation d'alcool pour les étudiantes féminines">
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="white-box">
-                            <p class="h5"><span class="text-decoration-underline text-info">Hypothèse n°1: </span><span>les étudiants féminins ont un degré d'alcoolisme supérieur aux étudiants féminins.</span>
-                                <span class="text-decoration-underline text-info"><br>Hypothèse n°2 :</span> <span>les étudiants masculins ont un degré d'alcoolisme supérieur aux étudiants masculins.</span>
-                           </p>
-                         
-                            <p>En abscisse, nous retrouvons la consommation d'alcool en semaine. "1" étant très peu de consommation et "5" étant beaucoup de consommation d'alcool.</p>
+                            <p class="h5"><span class="text-decoration-underline text-info">Hypothèse n°1:
+                                </span><span>les étudiants masculins ont un degré d'alcoolisme supérieur aux étudiantes
+                                    féminines.</span>
+                                <span class="text-decoration-underline text-info"><br />Hypothèse n°2 :</span> <span>les
+                                    étudiantes féminines ont un degré d'alcoolisme supérieur aux étudiants
+                                    masculins.</span>
+                            </p>
 
-                                <p> Nous avons calculé la moyenne de la consommation d'alcool chez les étudiants masculins et féminins.
-            
-                                </p>
-                                <br>
-                                <p>Nous allons définir M1 = Moyenne du degré d'alcoolisme des personnes du sexe féminin<br>
-                                et M2 = Moyenne du degré d'alcoolisme des personnes du sexe masculin
-                                <br>
-                                <br>
-                                Après le calcul nous avons trouvé que M1 =1.288889  et M2 = 1.933333.
-                                <br>
-                                Nous voyons que la moyenne de la consommation d'alcool chez les femmes est moins élevée que la moyenne chez les hommes mais ce n'est pas
+                            <p class="text-justify">En abscisse, nous retrouvons la consommation d'alcool en semaine.
+                                "1" étant très peu de
+                                consommation et "5" étant très forte consommation d'alcool.</p>
+
+                            <p class="text-justify"> Nous avons calculé la moyenne de la consommation d'alcool chez les
+                                étudiants masculins et féminins.
+                            </p>
+                            <p class="text-justify">Nous allons définir M<sub>1</sub> = Moyenne du degré d'alcoolisme
+                                des étudiants du sexe masculin<br />
+                                et M<sub>2</sub> = Moyenne du degré d'alcoolisme des étudiants du sexe féminin
+                                <br />
+                            </p>
+                            <p class="text-justify">
+                                Après le calcul nous avons trouvé que M<sub>1</sub> =1.933333 et M<sub>2</sub> =
+                                1.288889.
+                                <br />
+                            </p>
+                            <p class="text-justify">
+                                Nous voyons que la moyenne de la consommation d'alcool chez les femmes est moins élevée
+                                que la moyenne chez les hommes mais ce n'est pas
                                 suffisant pour confirmer notre hypothèse.
-                                <br>
-                                <br>
-                                Comme précédemment nous avons décidé de calculer le pourcentage de personnes qui ont un degré de consommation supérieur ou égal à 2 pour l'hypothèse 1 puis pour l'hypothèse 2.
-                                <br>
-                                <br>
-                                Nos résultats sont : <ul><li>0.1777778 soit 18% de femmes qui ont un degré supérieur ou égal à 2.
-                                </li><li>0.5333333 soit 53% d'hommes qui ont un degré supérieur ou égal à 2.
-                                </li></ul>
-                                <br>
-                                Nous remarquons que pour l'échantillon qui constitue l'hypothèse 2, les étudiants avec un degré d'alcoolisme égal ou supérieur à 2 consituent
-                                une plus grosse part que celle de l'hypothèse 1.
-                                <br>
-                                <br>
-                                Nous pouvons voir ça visuellement à l'aide du graphe où les femmes n'ont pas un taux d'alcoolémie supérieur à 4. 
-                             
-                                <br>
-                                <br>
-                                Pour confirmer notre hypothèse, on décide de calculer l'intervalle de confiance de l'hypothèse 2, qui semble vraie.
-                                <br>
-                                En calculant, nous avons un intervalle entre 1.580172 et 2.286495. 
-                                <br>
-                                Nous rappelons que M2 = 1.933333 et il doit appartenir à l'intervalle [1.580172 ; 2.286495] qui est nommé intervalle de confiance à 95%.<br>
-                                En conclusion, l'hypothèse 2 est acceptée à 95%.
+                                <br />
+                            </p>
+                            <p class="text-justify">
+                                Les calculs de la variance de l'hypothèse 1 (V<sub>1</sub>) et de l'hypothèse 2
+                                (V<sub>2</sub>) ont donné:<br />
+                                V<sub>1</sub> = 1.381818 et V<sub>2</sub> = 0.4828283.<br />
+                                On en déduit que les données de l'hypothèse 2 sont peu dispersées, proche de la moyenne. 
+                                Il y a concentration d'étudiantes au niveau du degré d'alcool égal à 1 et aucune étudiante n'a de valeur extrême (égale à 5) de degré d'alcoolisme.<br/> 
+                                Quant aux données de l'hypothèse 1, elles sont beaucoup plus dispersées que celles de l'hypothèse 2. 
+                            </p>
+                            <p class="text-justify">
+                                Comme précédemment nous avons décidé de calculer le pourcentage de personnes qui ont un
+                                degré de consommation supérieur ou égal à 2 pour l'hypothèse 1 puis pour l'hypothèse 2.
+                                <br />
+                                Nos résultats sont :
+                            </p>
+                            <ul>
+                                <li>0.5333333 soit 53% d'hommes qui ont un degré supérieur ou égal à 2.
+                                </li>
+                                <li>0.1777778 soit 18% de femmes qui ont un degré supérieur ou égal à 2.
+                                </li>
+                            </ul>
+                            <p class="text-justify">
+                                Nous remarquons que pour l'échantillon qui constitue l'hypothèse 1, les étudiants avec
+                                un
+                                degré d'alcoolisme égal ou supérieur à 2 consituent
+                                une plus grosse part que celle de l'hypothèse 2.
+                                <br />
+                                Nous pouvons voir cela visuellement à l'aide du graphe où les femmes n'ont pas un taux
+                                d'alcoolémie supérieur à 4.
+                                <br />
+                                Pour confirmer notre hypothèse, on décide de calculer l'intervalle de confiance de
+                                l'hypothèse 1, qui semble vraie.
+                                <br />
+                                En calculant, nous avons un intervalle entre 1.580172 et 2.286495.
+                                <br />
+                            </p>
+                            <p class="text-justify">
+                                Nous rappelons que M<sub>1</sub> = 1.933333 et il doit appartenir à l'intervalle
+                                [1.580172 ;
+                                2.286495] qui est nommé intervalle de confiance à 95%.<br /></p>
+                            <p class="text-justify">
+                                <u>En conclusion, l'hypothèse 1 est acceptée à 95%.</u> <br /><br />
+                                Nous supposons que les étudiants masculins consomment plus d'alcool que les étudiantes
+                                car
+                                ils possèdent en plus grand nombre un enzyme hépatique qui dégrade plus rapidement
+                                et mieux l'alcool dans leur corps les poussant ainsi à continuer de consommer de l'alcool
+                                là
+                                où les filles seraient repu plus rapidement.
                             </p>
                         </div>
                     </div>
@@ -369,12 +494,15 @@
                                 <li>Yessine BEN EL BEY</li>
                                 <li>Hugo NORTIER</li>
                             </ul>
-                            <p>Nous avons tous les trois fait un DUT informatique à Nice puis une Licence 3 à la Miage
+                            <p class="text-justify">Nous avons tous les trois fait un DUT informatique à Nice puis une
+                                Licence 3 à la Miage
                                 et nous faisons maintenant un Master 1, toujours à la Miage de Sophia-Antipolis.
                             </p>
-                            <p>
-                                Dans le groupe, nous avons tous rassemblé notre savoir-faire pour réaliser ce projet. Saad a mis en oeuvre des tests statistiques,
-                                Yessine a mis en place des hypothèses sur les informations collectées et Hugo a établi le rapport sur les cas d'études. 
+                            <p class="text-justify">
+                                Dans le groupe, nous avons tous rassemblé notre savoir-faire pour réaliser ce projet.
+                                Saad a mis en oeuvre des tests statistiques,
+                                Yessine a mis en place des hypothèses sur les informations collectées et Hugo a établi
+                                le rapport, les conclusions et visuels des cas d'études.
                                 Evidemment, nous avons discuté tous ensemble au sujet des résultats obtenus
                             </p>
                         </div>
@@ -386,4 +514,5 @@
         </div>
     </div>
 </body>
+
 </html>
