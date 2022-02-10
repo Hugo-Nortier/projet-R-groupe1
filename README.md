@@ -8,6 +8,6 @@ La finalité du projet est d'étudier le degré d'alcoolisme chez des étudiants
 Ce projet a été réalisé à l'aide du langage de programmation 'R' en mettant en place des tests d'hypothèses et en calculant diverses quantités statistiques.
 
 [Rapport au format HTML](./html/index.html)  
-[Code source R](./R/projet.R)
+[Code source R](./R/)
 ------------
 
